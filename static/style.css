@@ -1,0 +1,143 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.container {
+    width: 30%;
+    border: 3px solid black;
+    padding: 10px;
+    margin: 25%;
+    box-shadow: 10px 10px 10px 10px;
+    background-color: darkcyan;
+}
+.question {
+    background-color: turquoise;
+}
+.option {
+    display: flex;
+    flex-direction: column;
+    background-color: cornflowerblue;
+}
+body {
+    background-image: url(../static/nina-photolab-6eL_lMJDwjM-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.option1, .option2, .option3, .option4 {
+    border: 3px solid blue;
+    border-radius: 30px;
+    margin: 2%;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.Login {
+    width: 25%;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-left: 10%;
+    border-radius: 20px;
+    margin-left: 20%;
+    margin-top: 20%;
+}
+form {
+    size: 25px;
+    color: ivory;
+    border-radius: 15px;
+    padding: 10px;
+    line-height: 50px;
+    margin-left: 20%;
+}
+form input {
+    background: none;
+    border-bottom: 3px solid green;
+}
+.Login h2{
+    color: black;
+    text-decoration: underline red;
+}
+.btn-gradient {
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    color: rgb(178, 240, 8);
+    animation: c 53s linear infinite;
+    background: linear-gradient(
+    121.19deg,
+    rgba(133, 239, 49, 0) 25.73%,
+    hsla(0, 0%, 100%, 0.3) 45.27%,
+    rgba(133, 239, 49, 0) 62.27% ), rgb(0, 0, 0);
+  
+  transition: background-color 0.5s ease;
+  
+    }
+  
+    .btn-gradient:hover {
+    animation: c 53s linear infinite;
+    background: linear-gradient(
+    121.19deg,
+    rgba(133, 239, 49, 0) 25.73%,
+    hsla(0, 0%, 100%, 0.3) 45.27%,
+    rgba(133, 239, 49, 0) 62.27% ), white;
+    }
+  
+    @keyframes c {
+  
+    0% {
+    background-position: -5000px 0;
+    }
+  
+    to {
+    background-position: 5000px 0;
+    }
+  
+    }
+    .bg{
+        background-color:#5f788a;
+    }
+/* Put a seperation from the "Registration" and the "Text" to make it more vibrant */
+
+.menubar {
+    background-color: black;
+}
+nav ul {
+        list-style-type: none;
+        display: flex;
+}
+nav ul li {
+    padding:  10px;
+    margin-right: 25%;
+}
+nav ul li a {
+    color: ivory;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+nav ul li a:hover {
+    color: purple;
+    transition: 0.3s ease-in;
+}
+h1 {
+    font-size: 2.1rem;
+    line-height: 1.4;
+    text-align: center;
+    margin-top: 50px;
+}
+.animation {
+    width: 70%;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("../static/nina-photolab-6eL_lMJDwjM-unsplash.jpg");
+    background-size: 100% 100%;
+    animation: slider 10s infinite linear;
+}
+@keyframes slider{
+    0%{background-image: url(../static/alinenok-G9vRDGA46FY-unsplash.jpg);}
+    35%{background-image: url(../static/ball-park-brand-RKQ4-Q5FF-o-unsplash.jpg); }
+    75%{background-image: url(../static/nina-photolab-6eL_lMJDwjM-unsplash.jpg);}
+}
