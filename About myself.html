@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-rows: 200px 400px 400px 200px;
+}
+.header {
+    grid-area: 1/1/2/5 ;
+    border: solid;
+    background-color: cyan;
+}
+.sidebar {
+    grid-area: 2/1/3/2;
+    border: dotted;
+}
+.content1 {
+    grid-area: 2/2/3/3;
+    border:groove;
+}
+.content2 {
+    grid-area: 2/3/3/4;
+    border: ridge;
+}
+.infocard {
+    grid-area: 2/4/3/5;
+    border: dashed;
+}
+.footer {
+    grid-area: 3/1/4/5;
+    border: double;
+}
+img {
+    width: 100%;
+    height: 80%
+}
+ul {
+    display: flex; 
+    flex-direction: column;
+     align-items:  flex-start;
+}
+li {
+    padding: 9px;
+    list-style-type: none;
+}
+    </style> 
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Login</a></li>
+                <li><a href="">Quiz</a></li>
+                <li><a href="">Registration</a></li>
+                <li><a href="">About me</a></li>
+            </ul>
+        </div>
+        <div class="sidebar"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptatibus nobis minus eum unde recusandae ipsam nihil perspiciatis et sed dolorum mollitia officia provident, magnam laborum alias laudantium! Illum, nam?</div>
+        <div class="content1"> 
+            <img src="../static/GirlSittingAtComputer.jpg" alt="">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit vero assumenda architecto autem doloribus modi! Non odio reiciendis eaque culpa dolore obcaecati. Adipisci accusantium ullam animi inventore magni, odit mollitia?</div>
+        <div class="content2">
+            <img src="../static/Skullmask.jpg" alt="">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit nesciunt voluptatibus dolorem vero commodi eveniet, veritatis ipsam officiis neque itaque sequi velit aperiam, unde libero distinctio delectus debitis dolore animi.</div>
+        <div class="infocard"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi architecto, hic perspiciatis quidem suscipit nisi, quae autem exercitationem provident placeat excepturi veritatis debitis quam amet numquam sit nobis! Quam, commodi.</div>
+        <div class="footer"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis iure magnam ipsa laudantium vero voluptatem quam labore recusandae temporibus dolore perspiciatis animi deserunt reprehenderit, necessitatibus odio nam nulla corporis est!</div>
+    </div>
+</body>
+</html>
